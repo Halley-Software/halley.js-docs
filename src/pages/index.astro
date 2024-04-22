@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+const packages = ["npm", "yarn", "pnpm"]
+---
+
+<Layout title="The simple, minimalist and tiny web framework">
+	<main class="flex h-screen">
+		<div class="m-auto">
+      <img src="/logo.webp" class="m-auto" width={170} height={170} alt="cometa comet halley.js halley.http laniakeajs laniakeajs">
+			<h1 class="text-2xl">Install fast, understand all, build reliability.</h1>
+			<h2 class="my-4">Install using your prefered package manager:</h2>
+
+      <a href="#install" class="m-auto px-5 py-2 rounded-lg bg-[#242424] text-white font-bold">
+        Install
+      </a>
+
+      <div id="install" class="grid grid-rows-2 gap-4">
+        {packages.map(packagesManager => (
+          <div class="inline-block">
+            <h3 class="font-bold">{packagesManager}</h3>
+            <hr class="border-gray-300">
+            <span class="text-lg">{packagesManager} { packagesManager === "yarn" ? "add" : "install" } @laniakeajs/halley.http</span>
+          </div>
+        ))}
+      </div>
+		</div>
+	</main>
+</Layout>
