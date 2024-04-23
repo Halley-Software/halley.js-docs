@@ -1,0 +1,31 @@
+---
+import * as data from "../data.json"
+
+const classes = Object.entries(data.classes)
+---
+<ul class="pl-2">
+  {classes.map(clas => (
+    <li class="font-bold text-lg">{clas[0]}</li>
+    <li>
+      <ul class="list-inside list-disc pl-2">
+        <li class="font-bold">Properties</li>
+        <li class="list-none">
+          <ul class="list-inside pl-2">
+            {clas[1].properties.map(property => (
+              <li class="list-inside pl-4">{property}</li>
+            ))}
+          </ul>
+        </li>
+
+        <li class="font-bold">Methods</li>
+        <li class="list-none">
+          <ul class="list-inside pl-2">
+            {clas[1].methods.map(method => (
+            <li class="list-inside pl-4">{method}</li>
+            ))}
+          </ul>
+        </li>
+      </ul>
+    </li>
+  ))}
+</ul>
