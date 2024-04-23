@@ -3,6 +3,8 @@ interface Props {
   isFixed: boolean
 }
 
+import WhiteGithub from '@icons/WhiteGithub.astro'
+
 const { isFixed } = Astro.props
 ---
 
@@ -14,10 +16,18 @@ const { isFixed } = Astro.props
       </a>
     </li>
     <li class="text-lg mr-6">
-      <a href="docs">Documentation</a>
+      <a href="/docs">Documentation</a>
+    </li>
+    <li class="text-lg mr-6">
+      <a href="/tutorial">Tutorial</a>
     </li>
     <li class="text-lg mr-6">
       <a href="/philosophy">Philosophy</a>
+    </li>
+    <li class="bg-[#242424] hover:bg-[#343434] rounded-3xl p-2">
+      <a target="_blank" href="https://github.com/Halley-Software/halley.js">
+        <WhiteGithub />
+      </a>
     </li>
   </ul>
 </nav>
