@@ -1,0 +1,54 @@
+{
+  "classes": {
+    "Halley": {
+      "properties": [
+        "env",
+        "error",
+        "middlewareStack"
+      ],
+      "methods": [
+        "rawBodyParser",
+        "serveStatic",
+        "makeSuitable",
+        "setError",
+        "register",
+        "use",
+        "ready"
+      ]
+    },
+    "HRouter": {
+      "properties": [
+        "routeStack",
+        "routerPath"
+      ],
+      "methods": [
+        "getRoutes",
+        "IterateRoutes",
+        "handlePath",
+        "add",
+        "get",
+        "post",
+        "put",
+        "delete",
+        "options",
+        "custom"
+      ]
+    },
+    "Request": {
+      "properties": [
+        "body",
+        "params"
+      ],
+      "methods": []
+    },
+    "Reply": {
+      "properties": [],
+      "methods": [
+        "status",
+        "send",
+        "sendFile",
+        "json"
+      ]
+    }
+  }
+}
