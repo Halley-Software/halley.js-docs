@@ -1,0 +1,21 @@
+---
+import Layout from "@layouts/Layout.astro"
+
+const packages = ["npm", "yarn", "pnpm"]
+---
+
+<Layout title="Install" isNavBarFixed={true}>
+  <main class="flex h-screen">
+    <div id="install" class="m-auto">
+      <h1 class="text-xl mb-10">Install halley.js in your node.js project</h1>
+      <div class="grid grid-rows-3 gap-4">
+        {packages.map(packagesManager => (
+          <div>
+            <h3 class="font-bold">{packagesManager}</h3>
+            <hr class="border-gray-300">
+            <span class="text-lg">{packagesManager} { packagesManager === "npm" ? "install" : "add" } @laniakeajs/halley.http</span>
+          </div>
+        ))}
+      </div>
+  </main>
+</Layout>
