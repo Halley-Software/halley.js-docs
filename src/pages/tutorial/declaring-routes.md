@@ -42,7 +42,7 @@ app.get("/", (req, res) => {
 app.ready(5000)
 ```
 
-In this figure we can see the use of a new method: `app.get`. Through this method we can declare a method
+In this code we can see the use of a new method: `app.get`. Through this method we can declare a method
 that sends data when an HTTP request reach the server endpint `/` using `GET` HTTP verb.
 Finally, when that request reach to the server, it will respond with the HTML content: \<h1\>Hello World!\</h1\>
 
