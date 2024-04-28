@@ -28,7 +28,7 @@ some methods more used than others and every application that works over the HTT
 
 Once understanded HTTP methods, let's see the code!
 
-Here, we can see the simplest route that can be builded and it works over HTTP `GET` method:
+Here, we can see the simplest route that can be builded; working over HTTP `GET` method:
 
 ```js
 import { Halley } from "@laniakeajs/halley.http"
